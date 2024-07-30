@@ -104,3 +104,45 @@ member.getTeam()은 값이 있지만, getOrder()는 null이 나오게 된다.
 ### 객체를 자바 컬렉션에 저장하듯 DB에 저장할 수 없을까?
 
 이를 위해 만들어 진 JPA!
+
+---
+
+# JPA란?
+![image](https://github.com/user-attachments/assets/12d088b0-b6ee-48cb-8efa-c6e215a025ee)
+
+JPA(Java Persistence API)는 자바 진영의 ORM 기술 표준이다.   
+어플리케이션과 JDBC 사이에서 동작한다.   
+
+### ORM
+Object Relational Mapping - 객체와 관계형 데이터베이스를 매핑한다는 뜻이다.
+
+![image](https://github.com/user-attachments/assets/5e90a441-ed88-43ad-b6c8-65ec15118dcc)
+
+jpa.persist(member)를 통해서 즉, JPA를 사용해서 객체를 저장하는 코드이다.   
+- persist: 보관하다.
+
+![image](https://github.com/user-attachments/assets/2912c37c-c5f9-44a3-a578-b6a0fc93841b)
+Member member = jpa.find(memberId)를 통해서 즉, JPA를 사용해서 객체를 조회하는 코드이다.   
+
+# JPA를 사용하는 이유
+
+## 생산성
+- 자바 컬렉션에 객체를 저장하듯 JPA에게 저장할 객체를 전달한다.   
+- INSERT SQL이나 JDBC API를 사용하는 반복적이고 지루한 일을 JPA가 대신 처리한다.
+- SQL 중심적인 개발에서 객체 중심으로 개발하게 해준다.
+
+## 패러다임 불일치
+상속, 연관관계, 객체 그래프 탐색 같은 패러다임 불일치를 해결해준다.   
+동일한 트랜잭션에서 조회한 객체의 동일성을 보장해준다.   
+
+## 트랜잭션을 지원하는 쓰기 지연
+1.JPA가 트랜잭션을 커밋할 때까지 INSERT SQL을 모아둔다.
+2. JDBC BATCH SQL 기능을 사용해서 한번에 SQL을 전송한다.
+3. 결과적으로 네트워크 통신 비용을 줄인다.
+
+## 지연 로딩과 즉시 로딩
+지연 로딩: 객체가 실제 사용될 때 로딩한다.   
+즉시 로딩: JOIN SQL로 한번에 연관된 객체까지 미리 조회한다.   
+
+
+
