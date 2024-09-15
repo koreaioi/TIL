@@ -33,11 +33,6 @@ SpringApplication 이름은 EazyBankBackendApplication으로 변경 후 해당 �
 추후 DB로 부터 Account를 가져오게 할 컨트롤러
 
 ```java
-package com.eazybytes.controller;
-
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
-
 @RestController
 public class AccountController {
 
@@ -54,12 +49,6 @@ public class AccountController {
 잔고 정보를 반환하는 컨트롤러
 
 ```java
-package com.eazybytes.controller;
-
-
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
-
 @RestController
 public class BalanceController {
 
@@ -74,11 +63,6 @@ public class BalanceController {
 ## LoansController
 
 ```java
-package com.eazybytes.controller;
-
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
-
 @RestController
 public class LoansController {
 
@@ -96,9 +80,6 @@ public class LoansController {
 
 ```java
 package com.eazybytes.controller;
-
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class CardsController {
@@ -137,11 +118,6 @@ public class ContactController {
 ## noticesController
 
 ```java
-package com.eazybytes.controller;
-
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
-
 @RestController
 public class NoticesController {
 
