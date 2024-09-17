@@ -154,3 +154,16 @@ public class SecurityConfig {
 }
 
 ```
+
+
+# `Session` vs `JWT`
+
+개발자 유미 [`스프링 시큐리티 JWT 11: JWT 검증 필터`](https://www.youtube.com/watch?v=7B6KHSZN3jY&list=PLJkjrxxiBSFCcOjy0AAVGNtIa08VLk1EJ) 편 댓글을 참고
+
+댓글 내용
+
+![image](https://github.com/user-attachments/assets/284164df-2527-4cc6-b113-30423491be9b)
+
+개발자의 답변
+
+![image](https://github.com/user-attachments/assets/ecd24cf2-9a8b-4d00-9f36-4776812eb997)
