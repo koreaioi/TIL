@@ -19,3 +19,11 @@ spring.jpa.hibernate.naming.physical-strategy=org.hibernate.boot.model.naming.Ph
 
 spring.jpa.properties.hibernate.dialect= org.hibernate.dialect.MySQLDialect
 ```
+
+---
+
+만약 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver 가 빨간줄이 뜬다면,
+아래 의존성을 추가하자.
+```properties
+	runtimeOnly 'com.mysql:mysql-connector-j'
+```
